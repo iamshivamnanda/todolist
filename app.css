@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=KoHo:wght@200&display=swap');
+
+body{
+    text-align: center;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'KoHo', sans-serif;;
+}
+
+button{
+    padding: 0.8rem 1.1rem;
+    font-size: 1rem;
+    color: white;
+    /* color: aquamarine; */
+    background-color: #008CBA;
+    border: none;
+    border-radius: 0.5rem;
+}
+button:hover{
+    color: #008CBA;
+    /* color: aquamarine; */
+    background-color: white;
+    border: 2px solid #008CBA;
+    border-radius: 0.5rem;
+}
+
+#app-title{
+    display: inline-block;
+    padding: 2rem 0;
+    margin-top: 0;
+    width: 100%;
+    font-size: 3rem;
+    background-color: aqua;
+    border-radius: 0.5rem;
+}
+
+#enter-field{
+    width: 90vw;
+    text-align: center;
+    height: 20vh;
+    border-radius: 0.5rem;
+    font-size: 1.3rem;
+    border-color: aqua;
+}
+
+#enter-field:focus-visible{
+    border-radius: 0.5rem;
+    border-color: blue;
+    outline: none;
+}
+
+.submit-bttn{
+    margin: 1rem;
+}
+
+.list-items h4{
+    display: inline-block;
+}
+
+.list-items{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.list-item{
+    margin: 1rem 0;
+    padding: 1.2rem 0.5rem;
+    width: 90vw;
+    font-size: 1.5rem;
+    border: 1px solid aqua;
+    font-size: 1.2rem;
+    background-color:rgba(0, 255, 255, 0.281);
+    border-radius: 0.5rem;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+.list-item input{
+    place-self: flex-start;
+}
+
+.list-item button{
+text-align: center;
+}
+
+.linethrough{
+    text-decoration: line-through;
+}
+
+.off{
+    background-color:#ccc;
+    border: none;
+
+}
+
+@media (min-width:600px) {
+    #enter-field{
+        /* width: 50vw; */
+        max-width: 700px;
+    }
+
+    .list-item{
+        max-width: 700px;
+    }
+}
